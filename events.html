@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - St. Aloysius Senior Secondary School Nabbingo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #ecf0f1;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        header {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(90deg, #34495e, #2c3e50);
+            transition: background 0.5s ease-in-out;
+        }
+
+        header:hover {
+            background: linear-gradient(90deg, #4ca1af, #34495e);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(10deg) scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #4ca1af, #2c3e50);
+            border: none;
+            color: #ffffff;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #2c3e50, #4ca1af);
+            transform: scale(1.1);
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #4ca1af;
+            box-shadow: 0 0 10px rgba(76, 161, 175, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 text-uppercase">St. Aloysius</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="academics.html" class="nav-link text-white">Academics</a></li>
+                    <li class="nav-item"><a href="admissions.html" class="nav-link text-white">Admissions</a></li>
+                    <li class="nav-item"><a href="events.html" class="nav-link text-white">Events</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
+                    <li class="nav-item"><a href="admin-dashboard.html" class="nav-link text-white">Admin Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-5 pt-5">
+        <section class="py-5 bg-white text-center">
+            <div class="container">
+                <h1 class="text-warning fw-bold animate__animated animate__fadeInDown">Events</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pic/6f98581bb372816b233b34fd08e33ca0.png" alt="Science Fair" class="img-fluid rounded shadow">
+                        <h3 class="text-center">Science Fair</h3>
+                        <p>Join us for the annual Science Fair showcasing innovative projects by our students.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="pic/38d65e7256409140c3dda03597b83784.png" alt="Cultural Day" class="img-fluid rounded shadow">
+                        <h3 class="text-center">Cultural Day</h3>
+                        <p>Experience the rich cultural heritage of our students through music, dance, and drama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center text-danger">Events</h1>
+                <p class="lead text-center">Stay updated with our upcoming and past events.</p>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="event3.jpg" class="card-img-top" alt="Event 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Sports Gala</h5>
+                                <p class="card-text">Cheer on your favorite teams at our annual Sports Gala.</p>
+                                <p class="text-muted">Date: July 20, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="event4.jpg" class="card-img-top" alt="Event 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Graduation Ceremony</h5>
+                                <p class="card-text">Celebrate the achievements of our graduating class of 2026.</p>
+                                <p class="text-muted">Date: August 5, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Upcoming Events</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Annual Sports Day</h5>
+                                <p class="card-text">Join us for a day of fun and sportsmanship on May 15, 2026.</p>
+                                <button class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Parent-Teacher Meeting</h5>
+                                <p class="card-text">An opportunity to discuss your child's progress on June 10, 2026.</p>
+                                <button class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2026 St. Aloysius Senior Secondary School Nabbingo. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
